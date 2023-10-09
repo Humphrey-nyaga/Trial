@@ -4,22 +4,62 @@
     ```
     mkdir Trial
     ```
-2. Initialize git
+2. Enter the project directory.
+   ```
+   cd Trial
+   ```
+
+3. Initialize git
     ```
     git init
     ```
-3. Create a remote repository.
-4. Get the remote repo link  
+4. Create a README file
+   
+   ```
+   touch README.md
+   ```
+5. Create a remote repository on GitHub.
+6. Get the remote repo link  
     ``` 
-    git@github.com:Humphrey-nyaga/Trial.git 
+    git@github.com:<username>/<repo_name>.git 
     ```
-5. Add the remote url of the project locally:  
+    Replace the username and repo name appropriately to match your repository.
+    e.g
     ```
+        git@github.com:Humphrey-nyaga/Trial.git 
+    ```
+7. Add the remote url of the project locally to link the local to remote: 
+    
+    ```
+    git remote add origin git@github.com:<username>/<repo_name>.git
+    ```
+    Replace the repo details appropriately.
+    E.g 
+
+     ```
     git remote add origin git@github.com:Humphrey-nyaga/Trial.git
     ```
-6. Push the local files to the remote repository.  
-    ```
-    git push origin main
-    ```
+8.  Add and Commit the current file(s)  in the working directory.
 
+    ```
+    git add README.md
+    ```
+    or
+    ```
+    git add .
+    ```
+     then
+     ```
+     git commit "First Commit"
+     ```
+9.  Push the local files to the remote repository.  
+   Use the -u flag to enable git to track the main branch of the local repo to the main of the remote repo.
 
+    ```
+     git push -u origin main 
+    ```
+    The same can be achieved by running the command:
+
+    ```
+    git push --set-upstream origin main
+    ```
