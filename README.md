@@ -28,7 +28,7 @@
     For this repo it is:
     e.g
     ```
-        git@github.com:Humphrey-nyaga/Trial.git 
+    git@github.com:Humphrey-nyaga/Trial.git 
     ```
 7. Add the remote ssh url of the project locally to link the local to remote: 
     
